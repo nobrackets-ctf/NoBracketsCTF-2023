@@ -1,0 +1,32 @@
+name: Hunt me if you can
+author: Shaym
+category: Forensic
+description: |-
+  Après avoir découvert les secrets de ce message inquiétant.\
+  Il serait intéressant de retrouver qui en est à l'origine !\
+  À partir de toutes les informations récoltées jusqu'à maintenant (Sniffer Loader) retrouver le nom original du malware et son humanhash.\
+  Note : Aucun scritping n'est nécessaire pour ce challenge.\
+  Format de flag : NBCTF{wannacry:three-georgia-xray-jig}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 488
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{ursnif:pennsylvania-nuts-foxtrot-uranus}
+
+tags:
+- Moyen
+- Forensic
+- Shaym
+- Hunting
+
+requirements:
+- Sniffer Loader
+
+version: '0.1'

@@ -1,0 +1,4 @@
+#!/bin/bash
+/usr/bin/vim -Z -u /rbin/vimrc /home/prisoner/eyes --
+echo "Well played again ! Here is your flag : "
+/bin/cat /home/prisoner/flag.txt

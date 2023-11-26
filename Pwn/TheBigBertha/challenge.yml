@@ -1,0 +1,31 @@
+name: La grosse Bertha
+author: MaitreChiffon
+category: Pwn
+description: |-
+  Suite à votre mission d'infiltration chez les Allemands, vous parvenez à mettre la main sur le logiciel
+  qui contrôle la grosse Bertha. Un canon monté sur rail qui pilonne vos lignes.
+  Cherchez un moyen de mettre hors d'état de nuir cette arme en compromettant le code.
+
+  Auteur: [MaitreChiffon](https://www.root-me.org/Youbi-490098?lang=fr)
+value: 464
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc thebigbertha.nobrackets.fr 30343
+
+flags:
+- NBCTF{4_M0r3_D1FF1CU17_0V3rF10W_66}
+
+files:
+- dist/TheBigBertha
+- dist/TheBigBertha.c
+
+tags:
+- Moyen
+- Buffer Overflow
+- MaitreChiffon
+
+version: '0.1'

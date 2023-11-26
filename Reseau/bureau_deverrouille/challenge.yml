@@ -1,0 +1,26 @@
+name: Bureau Déverrouillé
+author: ribt
+category: Reseau
+description: >-
+  Le chef de l'État-Major a quitté son bureau sans verrouiller son ordinateur ! Un
+  espion ennemi a été surpris en train de pianoter sur son clavier ! Des données sensibles
+  ont-elles été exfiltrées ?
+value: 484
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{Basic_DNS_3xfiltration}
+
+files:
+- dist/capture.pcapng
+
+tags:
+- Difficile
+- ribt
+
+version: '0.1'

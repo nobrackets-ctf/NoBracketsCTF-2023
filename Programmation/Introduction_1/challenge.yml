@@ -1,0 +1,36 @@
+name: Introduction 1/2
+author: Drahoxx
+category: Programmation
+description: |-
+  Pour les autres challenges de programmation, vous devrez interagir avec un serveur via TCP, cette introduction est là pour vous guider.
+   Sous Linux, vous pouvez utiliser l'utilitaire `netcat` comme ceci :\
+  `  nc <ip> <port>`\
+  Sinon avec python, python va vous permettre de vous connecter au serveur et d'automatiser les tâches à réaliser.\
+  Vous pouvez utiliser la librairie pwntools !\
+  ` pip install pwntools `\
+  Si vous n'avez pas la commande pip, vous pouvez essayer\
+  `python3 -m pip install pwntools`
+
+  Pour résoudre le challenge, il suffit de compléter le code fournit dans le fichier `server.py` et de le lancer.\
+   Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 194
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc prog-intro-1.nobrackets.fr 30337
+
+flags:
+- NBCTF{M@st3r_0f_TCP_Y0u_W1ll_B3c0me!}
+
+files:
+- dist/server.py
+
+tags:
+- Intro
+- Drahoxx
+- TCP
+
+version: '0.1'

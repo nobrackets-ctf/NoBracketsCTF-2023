@@ -1,0 +1,35 @@
+name: Lettre d'amour 4/4
+author: TheoR
+category: Cryptanalyse
+description: |-
+  En ces temps dangereux, Alice et Bob, couple aguerri, souhaitent communiquer en toute sécurité.
+  Et pour communiquer en toute sécurité, ils ont décidé de partager secrètement une clé.
+  Ils utilisent pour cela l'échange de clé Diffie-Hellman.
+
+  Cependant, vous avez réussi à intercepter les communications ce qui vous permet de modifier les messages d'Alice et de Bob.
+  Allez-vous réussir à trouver la clé partagée ?
+
+  Auteur: TheoR
+value: 488
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc amour.nobrackets.fr 30340
+
+flags:
+- NBCTF{Att3nT10n_A_L'H0mm3_Du_M1LL13U}
+
+files:
+- dist/lettre_amour_secret_partage.py
+
+tags:
+- Difficile
+- Diffie-Hellman
+- ManInTheMiddle
+- Python
+- TheoR
+
+version: '0.1'

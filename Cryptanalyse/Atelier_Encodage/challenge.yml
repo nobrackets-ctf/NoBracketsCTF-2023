@@ -1,0 +1,30 @@
+name: Atelier d'Encodage
+author: TheoR
+category: Cryptanalyse
+description: |-
+  Bienvenue dans cet atelier d'encodage !! Pas à pas, décodez les différents messages.
+
+  Format du flag : NBCTF{message1-message2-message3}
+  Séparez bien chaque message par un -
+
+  Auteur: TheoR
+value: 194
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{Je_Suis_Bipolaire-Compter_de_16_en_16-Trop_de_caractères_différents}
+
+files:
+- dist/message.txt
+
+tags:
+- encodage
+- TheoR
+- Intro
+
+version: '0.1'

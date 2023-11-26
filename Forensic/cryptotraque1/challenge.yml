@@ -1,0 +1,38 @@
+name: Cryptotraque 1/5
+author: nathan.out
+category: Forensic
+description: |-
+  Le système informatique de <?> a été piraté et tous les fichiers ont été chiffrés. Le pirate a laissé une demande de rançon sous la forme d'un fichier odt. Nous aimerions que vous fassiez parler ce fichier. Est-ce que le pirate aurait laissé par inadvertance des informations permettant de l'identifier ?
+
+  Trouvez le logiciel, son numéro de version ainsi que le système d'exploitation utilisé pour créer ce fichier.
+
+  Format du flag attendu : NBCTF{<nom_logiciel>/<version>$<systeme_dexploitation>}
+
+  **Exemple** de flag attendu : `NBCTF{Paint/14.0.4.2$Windows10_X86_64}`
+
+  Auteur: [nathan.out](https://nathan-out.github.io/)
+value: 260
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{LibreOffice/7.5.4.2$Linux_X86_64}
+
+files:
+- dist/HACKED_BY_GliTcHMaSt3r69.odt
+
+tags:
+- Facile
+- metadatas
+- nathan.out
+
+hints:
+- content: Un fichier odt peut être ouvert comme une archive.
+  cost: 20
+- Comment ouvrir autrement un fichier odt ?
+
+version: '0.1'

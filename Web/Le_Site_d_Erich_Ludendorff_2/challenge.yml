@@ -1,0 +1,31 @@
+name: Le site d'Erich Ludendorff 2/3
+author: Drahoxx
+category: Web
+description: |-
+  Bravo ! Vous avez réussi à vous connecter au site ! Cependant, vous n'êtes pas administrateur et ne pouvez pas accéder à la war-page.
+
+  Connectez-vous au compte d'Erich Ludendorff qui est sûrement administrateur !
+
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 400
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: http://erich.nobrackets.fr:30744
+
+flags:
+- NBCTF{T4rg3ts_AqUir3d!_BriTt4ny_1s_S4f3!!}
+
+tags:
+- Moyen
+- SQL
+- Drahoxx
+
+hints:
+- Il va falloir modifier votre première requête SQL :D
+
+version: '0.1'

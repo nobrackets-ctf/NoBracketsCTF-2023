@@ -1,0 +1,37 @@
+name: Lettres d'amour 1/4
+author: Leleee
+category: Cryptanalyse
+description: |-
+  _Un institut de recherche vous donne accès à différentes lettres d'un soldat mathématicien, nommé "M. V", qu'il a envoyées à sa femme et dont le contenu reste énigmatique aux yeux des historiens. Trouvez ce qu'elles cachent._
+
+  La première renferme un mystérieux poème ainsi qu'un agencement de lettres ne semblant pas faire sens :
+
+  Ne t'inquiète pas mon amour,
+  Bientôt je rentrerai.
+  Ce n'est qu'une question de temps,
+  Tout va s'arranger.
+  Fier de toi je suis, si tu as ma clé.
+
+  **ACEMK{E3u0wk_4z_c4z5}**
+value: 304
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{R3t0ur_4u_p4y5}
+
+tags:
+- Intro
+- Crypto
+- Steg
+- Leleee
+
+hints:
+- content: Vous connaissez Vigenère ?
+  cost: 10
+
+version: '0.1'

@@ -1,0 +1,26 @@
+name: Transfert de fichier 2/2
+author: ribt
+category: Reseau
+description: >-
+  Cette capture est plus réaliste que la première. Notre utilisateur a consulté plusieurs
+  fichiers. Saurez-vous retrouver le flag ?
+value: 400
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{LOV3_TO_3XTR4CT_OBJ3CTS}
+- NBCTF{L0V3_T0_3XTR4CT_0BJ3CTS}
+
+files:
+- dist/download.pcapng
+
+tags:
+- Moyen
+- ribt
+
+version: '0.1'

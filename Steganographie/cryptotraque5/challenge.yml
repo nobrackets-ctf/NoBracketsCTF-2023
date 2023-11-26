@@ -1,0 +1,35 @@
+name: Cryptotraque 5/5
+author: nathan.out
+category: Steganographie
+description: |-
+  L'identification du portefeuille nous a conduit à l'un des auteurs du piratage, bien joué ! Nous avons pu l'identifier, l'arrêter et saisi son ordinateur. Nos analystes ont identifié un document suspect qui pourrait contenir des informations sur la manière dont ce serait déroulé le piratage. Découvrez les informations cachées dans ce fichier.
+
+  Format du flag attendu : NBCTF{un_mot_de_passe}
+
+  Auteur: [nathan.out](https://nathan-out.github.io/)
+value: 444
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{que_pour_largent2023!}
+
+files:
+- dist/projet_de_recherche_economie.odt
+
+tags:
+- Moyen
+- stéganographie
+- nathan.out
+
+hints:
+- content: Vous connaissez les Matriochka ?
+  cost: 10
+- content: 'Ouvrez le document avec un gestionnaire d''archive (ex : Winrar).'
+  cost: 20
+
+version: '0.1'

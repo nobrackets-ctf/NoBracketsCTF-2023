@@ -1,0 +1,51 @@
+:command! -bang Hehe :echo "He he he..."
+
+:set nopaste
+:set nocompatible
+
+:cabbrev q Hehe
+:cabbrev wq Hehe
+:cabbrev x Hehe
+:cabbrev qa Hehe
+:cabbrev xa Hehe
+
+:map <C-o> : Hehe<CR>
+:noremap <C-o> :Hehe<CR>
+:noremap <S-z><S-z> :Hehe<CR>
+:noremap <S-z><S-q> :Hehe<CR>
+:noremap <C-z> :Hehe<CR>
+
+:noremap! <C-o> :Hehe<CR>
+:noremap! <S-z><S-z> :Hehe<CR>
+:noremap! <S-z><S-q> :Hehe<CR>
+:noremap! <C-z> :Hehe<CR>
+
+:inoremap <C-o> <Esc>:Hehe<CR>
+:inoremap <S-z><S-z> <Esc>:Hehe<CR>
+:inoremap <S-z><S-q> <Esc>:Hehe<CR>
+:inoremap <C-z> <Esc>:Hehe<CR>
+
+:vnoremap <C-o> :Hehe<CR>
+:vnoremap <S-z><S-z> :Hehe<CR>
+:vnoremap <S-z><S-q> :Hehe<CR>
+:vnoremap <C-z> :Hehe<CR>
+
+:xnoremap <C-o> :Hehe<CR>
+:xnoremap <S-z><S-z> :Hehe<CR>
+:xnoremap <S-z><S-q> :Hehe<CR>
+:xnoremap <C-z> :Hehe<CR>
+
+:snoremap <C-o> :Hehe<CR>
+:snoremap <S-z><S-z> :Hehe<CR>
+:snoremap <S-z><S-q> :Hehe<CR>
+:snoremap <C-z> :Hehe<CR>
+
+:cnoremap <C-o> :Hehe<CR>
+:cnoremap <S-z><S-z> :Hehe<CR>
+:cnoremap <S-z><S-q> :Hehe<CR>
+:cnoremap <C-z> :Hehe<CR>
+
+:onoremap <C-o> :Hehe<CR>
+:onoremap <S-z><S-z> :Hehe<CR>
+:onoremap <S-z><S-q> :Hehe<CR>
+:onoremap <C-z> :Hehe<CR>

@@ -1,0 +1,27 @@
+name: Vim Hell 2
+author: Enarior
+category: Misc
+description: |-
+  Suite à notre dernière extraction d'informations, les administrateurs ont mis à jour leur étrange outil.
+  Ce ne sera pas aussi facile cette fois-ci...\
+  Nom d'utilisateur : `prisoner`\
+  Mot de passe : `prisoner`
+value: 344
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: ssh prisoner@vim2.nobrackets.fr -p 30501
+
+flags:
+- NBCTF{F1N411Y_0U7_4F73r_1000_Y34r5}
+
+tags:
+- Moyen
+
+requirements:
+- Vim Hell 1
+
+version: '0.1'

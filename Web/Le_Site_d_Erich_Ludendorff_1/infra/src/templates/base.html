@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Erich's website</title>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/profile">
+        <span class="icon">
+          <i class="fas fa-user"></i>
+        </span>
+        <span>{{name}}</span>
+      </a>
+    </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+        {% if name == "" or name == "Not connected" %}
+          <a class="button is-info" href="/login">
+            <span class="icon">
+              <i class="fas fa-sign-in-alt"></i>
+            </span>
+            <span>Login</span>
+          </a>
+        {% else %}
+          <a class="button is-info" href="/logout">
+            <span class="icon">
+              <i class="fas fas fa-sign-out-alt"></i>
+            </span>
+            <span>Logout</span>
+          </a>
+        {% endif %}
+          <a class="button is-warning" href="/ziel">
+            <span class="icon">
+              <i class="fas fa-crosshairs"></i>
+            </span>
+            <span>War Page</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+    {% include 'flash.html' %}
+    {% block main %}
+    {% endblock %}
+</body>
+</html>

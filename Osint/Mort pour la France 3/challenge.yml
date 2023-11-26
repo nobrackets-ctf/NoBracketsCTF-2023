@@ -1,0 +1,30 @@
+name: Mort pour la France 3
+author: Kawas
+category: Osint
+description: |-
+  On parle toujours du dernier soldat français mort sur le sol français avant l'armistice.
+
+  1. Pourquoi la date de son décès sur sa tombe est-elle du 10 novembre 1918 ? (vous donnerez le titre du paragraphe de sa page wikipédia en minuscule et sans accents)
+  2. Une vidéo -au contenu controversé- sur ce soldat a été postée en Octobre 2021 sur facebook. Une imprécision historique s'y est glissée dès les premières seconces de la vidéo. Quelle est-elle ? (On demande le mot erroné, en minuscules)
+
+  Format du flag :
+  NBCTF{date-changee_roue}
+
+  Auteur: [Kawas](https://ozint.eu/ozinter/4630/)
+value: 356
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{mention-antidatee_meuse}
+
+tags:
+- Googleint
+- Socint
+- Difficile
+
+version: '0.1'

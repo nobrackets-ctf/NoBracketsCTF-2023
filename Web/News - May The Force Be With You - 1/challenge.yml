@@ -1,0 +1,31 @@
+name: News - May The **Force** Be With You - 1/2
+author: Endeavxor
+category: Web
+description: |-
+  Les dernières nouvelles sur un journal américain font l'effet d'une bombe ! D'après une source fiable, il semblerait que le prochain article puisse avoir un tournant majeur pour le cours de la guerre, mais nous n'avons pas plus d'info. Tentez de vous le procurer afin de pouvoir adapter notre stratégie.
+
+
+  Auteur: [Endeavxor](https://endeavxor.github.io)
+value: 458
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+host: http://news1.nobrackets.fr:30745
+connection_info: http://news1.nobrackets.fr:30745
+
+flags:
+- NBCTF{n3v3r_U53_W33k_k3Y_F0R_jwT}
+
+tags:
+- Facile
+- JWT
+- Endeavxor
+
+hints:
+- content: rockyou vous connaissez ?
+  cost: 50
+
+version: '0.1'

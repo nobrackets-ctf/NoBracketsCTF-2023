@@ -1,0 +1,37 @@
+name: Cryptotraque 4.5/5
+author: Aureli0f
+category: Osint
+description: |-
+  Sur le compte instagram de l'attaquant, un vieux portrait de femme a été posté. Mais de qui s'agit-il ?
+
+  Retrouvez son nom, prénom ainsi que son pseudonyme utilisé lors de son activité au renseignements.
+
+  Format : NBCTF{marie-de-rabutin_charline-rose}, prénom et nom puis prénom et nom, réponse séparé par un _ et espace au sein d'une réponse remplacé par -
+
+  Auteur: Aureli0f
+value: 368
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{louise-de-bettignies_alice-dubois}
+
+tags:
+- Facile
+- OSINT
+- Socint
+- googlint
+- Aureli0f
+
+hints:
+- content: Une recherche inversé par image devrait aider ...
+  cost: 10
+
+requirements:
+- Cryptotraque 3/5
+
+version: '0.1'

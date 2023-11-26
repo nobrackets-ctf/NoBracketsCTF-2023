@@ -1,0 +1,33 @@
+name: Soldat Inconnu 1/2
+author: Shaym
+category: Misc
+description: |-
+  On a retrouvé une boite secrète appartenant à un soldat inconnu, malheureusement, elle n'est pas accessible sans son mot de passe.\
+  On sait que son mot de passe est son prénom, à l'aide d'une liste des prénoms les plus courants durant la 1re Guerre Mondial, essayez d'ouvrir cette boîte.\
+  Le flag est le mot de passe contenu dans l'entrée nommée 'Cave'.\
+  Format de flag : NBCTF{mot_de_passe_de_la_cave}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 451
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{Al0h0m0r4_c4v3_0uvre_t0i!}
+
+files:
+- dist/boite.cube
+- dist/wordlist_soldat.txt
+
+tags:
+- Moyen
+- Misc
+- Shaym
+- Bruteforce
+- Keepass
+
+version: '0.1'

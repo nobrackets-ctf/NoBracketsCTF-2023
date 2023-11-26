@@ -1,0 +1,33 @@
+name: Introduction 2/2
+author: Drahoxx
+category: Programmation
+description: |-
+  Soldat ! Nous recevons chaque jour le nombre de balles tirées par nos différents régiments.
+  De plus, nous connaissons le nombre de balles que nous avions en stock il y a deux semaines.
+  Pouvez-vous nous donner le nombre de balles restantes actuellement ?
+
+
+  Attention, ça ne sert à rien de tenter de résoudre le challenge à la main, il y a plus de 1000 opérations à réaliser.
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 475
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc prog-intro-2.nobrackets.fr 30339
+
+flags:
+- NBCTF{Bull3ts_M@st3r_Y0u_h4v3_b3c0me!}
+
+tags:
+- Intro
+- TCP
+- Arithmétique
+- Drahoxx
+
+requirements:
+- Introduction 1/2
+
+version: '0.1'

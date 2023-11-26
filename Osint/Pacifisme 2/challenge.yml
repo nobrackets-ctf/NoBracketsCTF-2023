@@ -1,0 +1,30 @@
+name: Pacifisme 2
+author: Kawas
+category: Osint
+description: |-
+  1. On connaît le fichier S ; à l'époque existait un autre carnet de police destiné à recenser les individus soupçonnés d'espionnage puis les antimilitaristes.
+  Quel est son nom ?
+
+  2. Juste après l'assassinat, un télégramme est adressé à tous les préfets donnant l'ordre de ne pas utiliser les données qu'il contenait. Quelle est la date et l'heure de l'envoi de ce télégramme ?
+
+  Format du flag :  **NBCTF{fichier-s_AAAAMMJJ-hh:mm}**
+  Auteur : [Kawas](https://ozint.eu/ozinter/4630/)
+value: 390
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{carnet-b_19140801-14:25}
+
+tags:
+- Googleint
+- Moyen
+
+requirements:
+- Pacifisme 1
+
+version: '0.1'

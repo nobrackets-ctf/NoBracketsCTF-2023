@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block main %}
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-one-third">
+          <figure class="image is-128x128">
+            <img src="https://thispersondoesnotexist.com/" alt="Profile Picture">
+          </figure>
+        </div>
+        <div class="column">
+          <h1 class="title">{{ name }}</h1>
+          <br>
+          <p class="subtitle">
+            <span class="icon">
+              <i class="fas fa-check-circle"></i>
+            </span>
+            {{ grade }}
+          </p>
+          <p class="subtitle">
+            <span class="icon">
+              <i class="fas fa-user-secret"></i>
+            </span>
+            {{ uid }}
+          </p>
+          <p class="subtitle">
+            <span class="icon">
+              <i class="fas fa-flag"></i>
+            </span>
+            {{ FLAG_1 }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

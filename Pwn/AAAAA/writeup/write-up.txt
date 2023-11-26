@@ -1,0 +1,47 @@
+=========================
+Write du challenge AAAAA
+=========================
+
+Si vous avez bien compris, le principe d'un Buffer Overflow est d'écrire une entrée beaucoup trop grosse
+pour le programme. Pour enregistrer nos soldats nous avons le programme suivant:
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+int main(void){
+
+    char buf[20];
+    char caractere;
+    errno=0;
+    
+    printf("Entrez le nom du soldat:\n");
+    gets(buf);
+
+    size_t taille = strlen(buf);
+    printf("Taille de l'entrée: %zu\n", taille);
+
+    if (taille > 20) {
+          system("cat passwd.txt");
+    } else {
+          printf("Soldat enregistré: %s", buf);
+          exit(0);
+    }
+
+    return 0;
+}
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+1 - Avec la ligne "char buf[20]", nous définissons une entrée maximal de 20 caractères soit un prénom avec une
+taille maximal de 20 lettres. 
+
+2 - Avec la ligne gets(buf), nous recevons l'entrée utilisateur. La fonction gets est connu pour être vulnérable
+car elle ne controle absolument pas la taille de l'entrée.
+
+3 - Nous voyons dans le code que si la taille est supérieur à 20 alors nous affichons le fichier qui contient
+un mot de passe (le flag).
+
+4 - EXPLOIT ! Nous avons juste à rentrer une prénom ridiculement trop long (supérieur à 20) pour avoir notre flag.
+
+Exemple:
+
+$ > Entrez le nom du soldat:
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Taille de l'entrée: 39
+NBCTF{V3rY_51MP13_8UFF3r_0V3rF10W}

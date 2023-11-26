@@ -1,0 +1,31 @@
+name: Cryptotraque 3/5
+author: Aureli0f
+category: Osint
+description: |-
+  Avec les renseignements obtenus, retrouver l'identité de l'attaquant.
+  Un premier point d'entrée serait de découvrir un compte sur un réseau social ce qui permettrait d'obtenir un pseudo.
+
+  Format : NBCTF{pseudo}, le pseudo en minuscule sans les #,@ ou autre symbole pouvant apparaitre avant.
+
+  Auteur: Aureli0f
+value: 331
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{technowispzero}
+
+tags:
+- Facile
+- OSINT
+- Socint
+- Aureli0f
+
+hints:
+- L'ancien oiseau bleu pourrait être un bon endroit de recherche ...
+
+version: '0.1'

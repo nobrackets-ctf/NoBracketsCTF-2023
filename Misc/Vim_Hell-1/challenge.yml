@@ -1,0 +1,27 @@
+name: Vim Hell 1
+author: Enarior
+category: Misc
+description: |-
+  Nous avons réussi à nous infiltrer dans un système d'information ennemi grâce à nos talentueux hackers.
+  Cependant, notre compte est limité en droits.
+  Nous ne parvenons pas à lire le fichier contenant les informations que nous recherchons avec les moyens habituels : il semblerait qu'une étrange technologie soit la seule solution...
+
+  Aidez-nous à récupérer les informations. \
+  Nom d'utilisateur : `prisoner`\
+  Mot de passe : `prisoner`
+value: 290
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: ssh prisoner@vim.nobrackets.fr -p 30500
+
+flags:
+- NBCTF{H0W_D0_1_3X17_V1M_H3LP_ME}
+
+tags:
+- Intro
+
+version: '0.1'

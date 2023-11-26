@@ -1,0 +1,38 @@
+name: ADFGX Master
+author: TheoR
+category: Cryptanalyse
+description: |-
+  Il y a quelques mois Ernest a rencontré le Colonel Fritz Nebel, célèbre inventeur du cryptosystème ADFGX. Depuis, Ernst ne fait que l'utiliser pour écrire ses lettres. Allez-vous être capable de perser les secrets d'Ernest ?
+
+  Quelques indications :
+  1) Pour le bien du challenge le message a été traduit en français.
+  2) Une fois le message trouvé, veuillez insérer le flag sous le format suivant : NBCTF{LEMESSAGECACHE}
+
+  Auteur: TheoR
+value: 494
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{ATTENTIONALANALYSEFREQUENTIELLEPETITSOLDAT}
+
+files:
+- dist/output.txt
+- dist/ADFGX_cryptosystem.py
+
+tags:
+- Difficile
+- ADFGX
+- TheoR
+
+hints:
+- content: https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres
+  cost: 20
+
+requirements: null
+
+version: '0.1'

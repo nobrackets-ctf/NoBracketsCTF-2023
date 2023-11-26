@@ -1,0 +1,4 @@
+#!/bin/bash
+/usr/bin/vim /home/prisoner/unicorn --
+echo "Well played ! Here is your flag : "
+/bin/cat /home/prisoner/flag.txt

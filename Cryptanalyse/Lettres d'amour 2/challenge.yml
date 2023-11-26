@@ -1,0 +1,32 @@
+name: Lettres d'amour 2/4
+author: Leleee
+category: Cryptanalyse
+description: |-
+  _Le même institut de recherche vous donne une seconde lettre. Les historiens aimeraient savoir ce qu'a pu dire le soldat à sa bien aimée. Aidez-les à déchiffrer cette lettre._
+
+  Et si on chiffre plusieurs fois avec des clés différentes, c'est mieux n'est ce pas ?
+value: 428
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{70UJ0Ur5_P1U5_D3_C135_X0r}
+
+files:
+- dist/chall.py
+
+tags:
+- Facile
+- Crypto
+- XOR
+- Leleee
+
+hints:
+- content: Vous connaissez la propriété d'associativité du xor ?
+  cost: 20
+
+version: '0.1'

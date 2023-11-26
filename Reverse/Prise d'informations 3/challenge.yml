@@ -1,0 +1,31 @@
+name: Prise d'informations 3/3
+author: Endeavxor
+category: Reverse
+description: |-
+  Bien joué ! Nous souhaiterions pour cette dernière phase de préparation que vous résolviez une dernière tâche un peu plus complexe. D'après nos experts l'algorithme que contient ce nouveau binaire semble bien trop complexe pour être résolu statiquement. D'un œil attentif, vous remarquez que la comparaison avec votre entrée utilisateur pourrait être révélatrice.
+
+  **Important** : Pour les personnes utilisant la VM, prendre le second fichier **traceme_VM** et pas le premier. Inversement pour ceux n'utilisant pas la VM
+
+  Auteur: [Endeavxor](https://endeavxor.github.io)
+value: 480
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+host: null
+
+flags:
+- NBCTF{L7rAC3_A_G00D_FR13ND_f0R_dyNAm1c_AnaLy512}
+
+files:
+- dist/traceme
+- dist/traceme_VM
+
+tags:
+- Facile
+- trace
+- Endeavxor
+
+version: '0.1'

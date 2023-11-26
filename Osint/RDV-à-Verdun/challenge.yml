@@ -1,0 +1,53 @@
+name: RDV à Verdun
+author: Aureli0f
+category: Osint
+description: |-
+  À Verdun, Didier envoie ce message à sa pote Murielle.
+
+  "Salut Mumu, rdv jeudi aprem comme d'hab à côté montrant.truc.modique.
+  Après, si on a faim y'a toujours le aimable.pesante.crinière.
+  Puis on pourra traîner au ponde.avouer.mémoire, j'ai des figurines pop a acheté."
+
+  Concernant le premier lieu, quel est le nom du sculpteur de ce monument ?
+
+  Quelle est sa date d'inauguration ?
+
+  Pour le second lieu, quelle est son adresse ? (numéro et nom de rue seulement)
+
+  Quel est le prix d'un menu étudiant actuellement ? (sans le €, juste le nombre)
+
+  Concernant le troisième lieu, quel est son nom ?
+  A quel heure ce lieu fermera-t-il ce jour là ?
+
+
+  L'indice payant ne concerne que la seconde question du second lieu.
+
+  Format : NBCTF{gehry_1-janvier-1998_29-rue-de-bievre_12_fnac_12h35}, réponse séparée par un _ et espace au sein d'une réponse remplacé par -
+
+  Auteur: Aureli0f
+value: 419
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{boucher_23-mars-1929_35-quai-de-londres_6_placetogeek_19h00}
+
+tags:
+- Moyen
+- Geoint
+- Googleint
+- Socint
+- AureliOf
+
+hints:
+- Il semblerais qu'il localise des lieux avec seulement 3 mots ...
+- content: >-
+    Afin de retrouver le prix du menu, il y a de forte chance qu'il en ai fait la
+    promotion sur un réseau.
+  cost: 10
+
+version: '0.1'

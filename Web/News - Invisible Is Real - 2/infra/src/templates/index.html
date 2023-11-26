@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>The Washington Herrald - AMERICA ENTERS THE WAR</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="w-full  ">
+  <nav class="flex flex-col md:flex-row  gap-3 items-center justify-around  bg-stone-300 py-5 px-4">
+    <div class="flex md:w-2/12 w-full flex-col items-center justify-center border border-black text-xl font-bold">
+        <h1>NEWSLETTER</h1>
+        <h1>PUBLIC</h1>
+      </div>
+    <div>
+      <h1 class="font-serif text-4xl font-bold text-black">The Washington Herrald</h1>
+      <h1 class="text-center text-2xl">Washington, D.C.</h1>
+    </div>
+    <div class="flex md:w-2/12 w-full flex-col items-center justify-center border border-black text-xl font-bold">
+      <h1>NEWSLETTER</h1>
+      <h1>PUBLIC</h1>
+    </div>
+  </nav>
+</header>
+
+  <section class=" mx-auto flex  items-center justify-between border-t border-b border-black bg-stone-300 py-3 px-5 font-thin">
+    <span>April 6, 1917</span>
+    <span>The Washington Herrald</span>
+    <span>N° 1337</span>
+  </section>
+  <section class="bg-stone-300 py-5">
+    <h1 class="text-center font-serif text-7xl font-black">AMERICA ENTERS THE WAR</h1>
+    <h1 class="mt-5 text-center font-serif text-4xl font-black italic">The Great War Crosses the Atlantic</h1>
+  </section>
+
+  <section class="mx-auto grid w-full max-w-7xl md:grid-cols-4 gap-x-3 bg-stone-300 p-4">
+    <article class="col-span-2 p-3">
+      <img class="mb-5 h-auto border border-4 border border-black/50" src="{{ url_for('static',filename='img/unclesamwantyou.jpg') }}" />
+      <p class="font-sans text-sm first-letter:font-serif first-letter:text-3xl">In a momentous decision that combines resolute determination and thoughtful contemplation, the United States has officially abandoned its neutral stance toward the ongoing global conflict in Europe. President Woodrow Wilson addressed a formal request to Congress, urging a declaration of war against Germany.</p>
+      <p class="font-sans text-sm">This historic turning point follows months of intense debate and mounting tensions with the German Empire. Several factors played a critical role in pushing the nation towards this consequential decision. Of notable significance was Germany's announcement of unrestricted submarine warfare, a policy that jeopardized American maritime interests and the lives of American citizens.</p>
+      <br />
+      <p class="font-sans text-sm">President Wilson's eloquent address to Congress presented the multifaceted motivations behind this momentous step. He invoked the principles of democracy, peace, and freedom while emphasizing America's moral responsibility as a nation to stand by its European allies.</p>
+      <br />
+      <p class="font-sans text-sm">The response from Congress to President Wilson's call was overwhelmingly in favor of war. The resolution, declaring "that a state of war exists between the United States of America and Germany," passed with unanimous approval in the Senate and a resounding majority in the House of Representatives. This united front in Congress signifies the deep-seated conviction shared among the nation's lawmakers.</p>
+      <br />
+      <p class="font-sans text-sm">This decision marks the dawning of a new era for America, one that places the United States on the global stage with a prominent role to play in the pursuit of world peace. However, it also raises pivotal questions about the nation's preparedness for the war effort, the preservation of civil liberties, and the collective burden that this war will place on society. In the weeks ahead, it is imperative that every American citizen rallies behind this national commitment to the Great War, comprehending the sacrifices it will demand. As America steps onto the world's battlefield, the future remains uncertain, but the hope of ending this devastating conflict and establishing lasting peace continues to guide our nation.</p>
+    </article>
+    <article class="col-span-1">
+      <h1 class="text-center font-serif text-3xl font-bold italic">United we stand</h1>
+      <hr class="m-auto my-4 w-[150px] border-2 border-black" />
+      <h1 class="mt-3 text-center text-xl font-bold italic">indivisible, as the clarion call of liberty beckons us to rise above adversity, for the strength of a nation lies within the unity of its people.</h1>
+      <hr class="m-auto my-4 w-[150px] border-2 border-black" />
+      <div>
+        <h1 class="text-center font-serif text-xl font-bold">By Nikola M.</h1>
+        <p class="first-letter:font-serif first-letter:text-3xl">As America embarks on its journey into the crucible of the Great War, we call upon every able-bodied citizen to heed the call of duty. The time has come for every red-blooded American to step forward, to stand shoulder to shoulder with their compatriots, and to forge a legacy of valor that generations to come will revere.</p>
+        <br />
+        <p>In this hour of need, we summon the sons and daughters of liberty, from bustling city streets to tranquil rural homesteads. Join the ranks of the brave, the spirited, and the indomitable. It is with unwavering resolve that we proclaim, "We Need You!"</p>
+      </div>
+    </article>
+
+    <article class="col-span-1">
+      <div class="3 flex flex-col items-center justify-center border border-4 border-black py-4 px-2">
+        <h1 class="text-3xl">WE NEED YOU !</h1>
+      </div>
+      <div class="mt-6">
+        <p class="first-letter:font-serif first-letter:text-3xl">Our flag, the emblem of freedom, flies high and proud. But it is your sacrifice, your determination, and your unwavering commitment that will ensure its continued ascent. Enlist today, and let your heart beat with the rhythm of a nation united in purpose.</p>
+        <br/>
+        <p >Remember, this is not just a war fought on foreign soil; it is a battle for the ideals and principles that define the American spirit. It is a call to uphold liberty, justice, and the pursuit of happiness. It is your opportunity to etch your name into the annals of history, as one who answered the call when America needed you most.</p>
+        <br />
+        <p>The nation's collective strength lies in the unity of its citizens. Step forward, answer the call, and become part of the indomitable force that will shape the destiny of the world. Your country implores, "We Need You!"</p>
+        <br />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sint? Eos aliquam, maiores minima amet doloremque veritatis consectetur iusto autem facilis laudantium nisi, dolor enim impedit inventore quis, quisquam veniam!</p>
+      </div>
+    </article>
+  </section>
+<!-- partial -->
+  <script src="{{ url_for('static',filename='js/tailwindcss3-3-5.js') }}"></script>
+</body>
+<!--TODO : Setup /next-news-draw-->
+<!--FIXED : JWT KEY WEAK-->
+</html>

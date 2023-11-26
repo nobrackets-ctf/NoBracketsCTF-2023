@@ -1,0 +1,30 @@
+name: Cryptotraque 4/5
+author: Aureli0f
+category: Osint
+description: |-
+  Avec ce premier compte, Il faut a présent en obtenir un autre qui nous permettrait d'obtenir le nom prénom de l'attaquant.
+
+  Format : NBCTF{pierre_dupont}, prénom puis nom séparer par un _
+
+  Auteur: Aureli0f
+value: 368
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{eva_demaigne}
+
+tags:
+- Facile
+- OSINT
+- Socint
+- Aureli0f
+
+requirements:
+- Cryptotraque 3/5
+
+version: '0.1'

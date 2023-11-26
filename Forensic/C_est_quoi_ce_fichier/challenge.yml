@@ -1,0 +1,34 @@
+name: C'est quoi ce fichier ?
+author: Drahoxx
+category: Forensic
+description: |-
+  Vous connaissez l'extension `.obus` ? Personnellement non... Cependant, nous savons que le fichier contient des informations **textuelles** parmi ce champ de mines.
+
+
+  Trouvez les informations cachées dans ce fichier !
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{N0t_3veryThing_M4kes_SeN5e_1n_th1S_W0rlD...}
+
+files:
+- dist/champ_de_mines.obus
+
+tags:
+- Intro
+- Strings
+- Drahoxx
+
+hints:
+- Vous connaissez la commande strings ?
+- .txt for the win
+
+version: '0.1'

@@ -1,0 +1,27 @@
+name: Prise d'informations 2/3
+author: Endeavxor
+category: Reverse
+description: |-
+  Parfait ! Maintenant, vous pouvez atteler à ce binaire. Nous souhaiterions avoir une première vue d'ensemble sur les chaînes de caractères le constituant afin de prévoir notre stratégie. Trouvez une chaîne de caractère sortant du lot.
+
+  Auteur: [Endeavxor](https://endeavxor.github.io)
+value: 410
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+host: null
+
+flags:
+- NBCTF{S7R1NGs_GReP_for_7he_W1n}
+
+tags:
+- Intro
+- Endeavxor
+
+requirements:
+- Prise d'informations 1/3
+
+version: '0.1'

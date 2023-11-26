@@ -1,0 +1,33 @@
+name: Peaceful Silence
+author: Daeras
+category: Steganographie
+description: |-
+  Un exemplaire de ce qui est considéré comme l'un des enregistrements les plus importants de l'Histoire vient de vous être apporté.\
+  On vous a assuré qu'il contient plus d'informations qu'il n'y paraît.\
+  A vous de mener l'enquête...
+
+  Auteur: [Daeras](https://pandhack.fr/author/daeras/)
+value: 228
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{th3_w4r_15_f1n15h3d}
+
+files:
+- dist/Silence.mp3
+
+tags:
+- Facile
+- audio
+- Daeras
+
+hints:
+- Je suis le cousin du fantôme
+- '007'
+
+version: '0.1'

@@ -1,0 +1,31 @@
+name: Le C c'est le S
+author: Drahoxx
+category: Reverse
+description: |-
+  Pour passer le temps dans votre tranchée, votre ami inventeur vous crée de petites énigmes logiques tout en écoutant un célèbre cantateur de Marseille.
+
+  Ayant quelques heures à tuer, vous vous attelez au problème...
+
+  Auteur: Drahoxx
+value: 470
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{Mai_Ou_Et_D0nc_X0r_Ni_Car}
+
+files:
+- dist/Le_C_c_est_le_S
+
+tags:
+- Moyen
+- C
+- Drahoxx
+
+requirements: null
+
+version: '0.1'

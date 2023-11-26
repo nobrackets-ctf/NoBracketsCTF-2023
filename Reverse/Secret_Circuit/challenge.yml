@@ -1,0 +1,41 @@
+name: Secret Circuit
+author: Drahoxx
+category: Reverse
+description: |-
+  Nous avons trouvé une valise à code qui contient des documents de la plus haute importance ! Elle serait protégée par un circuit électronique très avancé !
+
+  Votre mission est de craquer le code de la valise !
+
+  Pour ouvrir le circuit, utilisez le logiciel [logisim-evolution](https://github.com/logisim-evolution/logisim-evolution/releases/tag/v3.8.0), ou grâce à la photo.
+
+  Format : NBCTF{\<les bits de haut en bas>}
+  Exemple : NBCTF{0010001011}
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 290
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+host: null
+
+flags:
+- NBCTF{1100011101}
+
+files:
+- dist/Secret_Circuit.circ
+- dist/photo_circuit.png
+- dist/photo_valise.png
+
+tags:
+- Facile
+- Logisim-Evolution
+- Circuit electronique
+- Logique booléenne
+- Drahoxx
+
+requirements: null
+
+version: '0.1'

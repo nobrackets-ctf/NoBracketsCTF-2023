@@ -1,0 +1,30 @@
+name: Le secret de mon aimée
+author: Shaym
+category: Steganographie
+description: |-
+  Alors que je suis ici, entouré par le tumulte de la guerre, mon esprit erre souvent vers ma douce Juliette.\
+  Juliette, ce nom porte en lui toute la beauté et la grâce du monde.\
+  Chaque fois que je le murmure, je suis transporté vers un endroit où la violence et la peur s'effacent.\
+  Juliette, mon amour, mon cœur, mon bonheur...
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 475
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{J3_5u15_pl31n_du_5113nc3_4ss0urd1ss4nt_d41m3r}
+
+files:
+- dist/mon_aimee.jpg
+
+tags:
+- Moyen
+- Stéganographie
+- Shaym
+
+version: '0.1'

@@ -1,0 +1,31 @@
+name: Le secret de mon amour
+author: Shaym
+category: Steganographie
+description: |-
+  Juliette se languit de son amour.\
+  Tous les jours, elle contemple son portrait.\
+  Malheureusement pour elle, elle est passée à côté de la chose la plus importante laissée par son amour.\
+  Aidez la a retrouver le mot doux qu'il lui a laissé.
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 400
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{c00l_msb_in_qrc0de}
+
+files:
+- dist/mon_amour.png
+
+tags:
+- Moyen
+- Stéganographie
+- Shaym
+- MSB
+
+version: '0.1'

@@ -1,0 +1,31 @@
+name: Le site d'Erich Ludendorff 1/3
+author: Drahoxx
+category: Web
+description: |-
+  Une source d'information anonyme nous indique qu'Erich Ludendorff, Général en chef des armées allemandes, a un site internet. À vous d'essayer de vous connecter au site pour peut-être accéder aux plus grands secrets de l'Allemagne !
+
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 304
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: http://erich.nobrackets.fr:30744
+
+flags:
+- NBCTF{Al3rT!_Fr3nCh_iNfiltr4t3d_Th3_W3bSit3!}
+
+tags:
+- Facile
+- SQL
+- Drahoxx
+
+hints:
+- Recherchez SQLi
+- content: SELECT uid FROM users WHERE username='{rq_username}' and password='{rq_passwd}';
+  cost: 10
+
+version: '0.1'

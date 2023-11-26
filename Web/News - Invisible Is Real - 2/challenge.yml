@@ -1,0 +1,29 @@
+name: News - Invisible Is Real - 2/2
+author: Endeavxor
+category: Web
+description: |-
+  Bien joué ! La faille semble corrigée et ils utiliseraient cette fois-ci des clés robustes et stockées dans le système.
+
+  Auteur: [Endeavxor](https://endeavxor.github.io)
+value: 496
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: http://news2.nobrackets.fr:30748
+
+flags:
+- NBCTF{Jwt_kId_N3v3r_TrU5t_u53R_1nPUt}
+
+tags:
+- JWT
+- Docker
+- Endeavxor
+- Difficile
+
+requirements:
+- News - May The **Force** Be With You - 1/2
+
+version: '0.1'

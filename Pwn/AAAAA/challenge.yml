@@ -1,0 +1,30 @@
+name: 'Very Simple BoF: Enregistrement'
+author: MaitreChiffon
+category: Pwn
+description: |-
+  Votre Etat major vous a envoyé un programme pour enregistrer plus rapidement les nouvelles recrues.
+  Cependant vous pensez que la technologie n'est pas au point et que le programme possède une faille.
+
+  Auteur: [MaitreChiffon](https://www.root-me.org/Youbi-490098?lang=fr)
+value: 290
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc enregistrement.nobrackets.fr 30342
+
+flags:
+- NBCTF{V3rY_51MP13_8UFF3r_0V3rF10W}
+
+files:
+- dist/AAAAA.c
+- dist/AAAAA
+
+tags:
+- Facile
+- Buffer Overflow
+- MaitreChiffon
+
+version: '0.1'

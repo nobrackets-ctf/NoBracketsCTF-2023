@@ -1,0 +1,30 @@
+name: God's Voice
+author: Shaym
+category: Steganographie
+description: |-
+  L'armée allemande a intercepté un messager portant une lettre ce matin.\
+  Cependant, incapable de déchiffrer cette lettre, ils vous ont demandé de l'aide.\
+  Apparemment, cette lettre aurait été écrite par un certain Frère Loys à destination du Père Sépteure.\
+  Format du flag : NBCTF{PHRASEENMAJUSCULE}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 304
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{STEGANOGRAPHYISTHELANGUAGEOFGOD}
+
+files:
+- dist/Lettre_a_mon_Pere.txt
+
+tags:
+- Facile
+- Stéganographie
+- Shaym
+
+version: '0.1'

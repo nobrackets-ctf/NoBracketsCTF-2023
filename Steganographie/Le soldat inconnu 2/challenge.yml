@@ -1,0 +1,31 @@
+name: Soldat Inconnu 2/2
+author: Shaym
+category: Steganographie
+description: |-
+  En ouvrant la boîte du soldat inconnu, qui n'est plus si inconnu que ça, vous tombez sur une image.\
+  Selon la description, il s'agit d'une photo du soldat fraîchement enrôlé.\
+  Vous vous dites que cela serait un beau geste que de l'envoyer à sa famille en tant que dernier souvenir.\
+  Malheureusement, elle a été endommagée, essayez de la réparer avant de l'envoyer.
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 491
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{m0n_b3ll3_un1f0rm3}
+
+tags:
+- Difficile
+- Stéganographie
+- Shaym
+- PNG
+
+requirements:
+- Soldat Inconnu 1/2
+
+version: '0.1'

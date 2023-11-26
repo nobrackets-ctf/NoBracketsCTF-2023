@@ -1,0 +1,27 @@
+name: Mort pour la France 1
+author: Kawas
+category: Osint
+description: |-
+  1. Quel est le prénom du soldat considéré comme étant le dernier soldat français mort sur le sol français avant l'armistice ?
+  2. Quel est son numéro matricule ?
+
+  Format du flag :
+  NBCTF{françois_752}
+
+  Auteur: [Kawas](https://ozint.eu/ozinter/4630/)
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{augustin_906}
+
+tags:
+- Googleint
+- Facile
+
+version: '0.1'

@@ -1,0 +1,38 @@
+name: Puzzle
+author: Enarior
+category: Programmation
+description: |-
+  Nos espions ont découvert une boîte aux lettres par laquelle les agents ennemis se transmettent des messages.
+  Cependant, les lettres sont séparées en plusieurs morceaux.
+  Pouvez-vous reconstituer ce puzzle ?
+
+  Communiquez avec le serveur et renvoyez les différents lettres du message dans l'ordre.
+
+  Exemple :
+
+  1906:t\
+  3263:i\
+  4651:g\
+  319:q\
+  4957:f
+
+  Réponse : qtigf
+value: 428
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc puzzle.nobrackets.fr 30338
+
+flags:
+- NBCTF{M4i1_B0X_D1SCoV3r3D_MUs7_CH4NG3}
+
+tags:
+- Facile
+- python
+- pwntools
+- Enarior
+
+version: '0.1'

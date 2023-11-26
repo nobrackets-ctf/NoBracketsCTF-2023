@@ -1,0 +1,33 @@
+name: Lettres d'amour 3/4
+author: Leleee
+category: Cryptanalyse
+description: |-
+  _Le soldat mathématicien découvre une nouvelle méthode de chiffrement. Il a choisit 2 entiers premiers assez grands pour ne pas pouvoir déchiffrer le message sans la clé privée que sa femme possède._
+
+  256 bits de données aléatoires, c'est sécurisé.
+value: 470
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{3_1s_s0_L0w}
+
+files:
+- dist/chall.py
+- dist/output.txt
+
+tags:
+- Moyen
+- Crypto
+- RSA
+- Leleee
+
+hints:
+- content: Racine cubique
+  cost: 30
+
+version: '0.1'

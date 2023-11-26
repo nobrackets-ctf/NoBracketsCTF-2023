@@ -1,0 +1,32 @@
+name: Mort pour la France 2
+author: Kawas
+category: Osint
+description: |-
+  On parle toujours du dernier soldat français mort sur le sol français avant l'armistice.
+
+  1. Comment son attitude (au combat) est-elle décrite dans le registre matricule ?
+  2. Quel est le prénom de l'auteur du premier livre qui raconte ses derniers jours ?
+
+  Format du flag :
+  NBCTF{tete-brulee_claude}
+
+  Auteur: [Kawas](https://ozint.eu/ozinter/4630/)
+value: 318
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{brillante_alexandre}
+
+tags:
+- Googleint
+- Facile
+
+requirements:
+- Mort pour la France 1
+
+version: '0.1'

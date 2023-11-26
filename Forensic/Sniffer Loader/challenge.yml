@@ -1,0 +1,35 @@
+name: Sniffer Loader
+author: Shaym
+category: Forensic
+description: |-
+  La secrétaire du major a reçu un message intrigant aujourd'hui.
+  Dedans, il était question de compte bancaire suisse, de lingots d'or et de trahison...\
+  Étant le chef de la sécurité, vous volez à son secours !\
+  Aidez là à désobfusquer ce message !\
+  Note : Le flag attendu est l'URL vers le C2 Note 2 : Le fichier JS original a été converti en fichier texte, car il contient une charge malveillante, active. Merci de ne pas visiter l'URL du C2.\
+  Format de flag : NBCTF{https://www.google.com}
+
+
+  Auteur : Shaym
+value: 444
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{https://kdnr.online}
+
+files:
+- dist/message_pour_le_major.txt
+
+tags:
+- Moyen
+- Forensic
+- Shaym
+- Désobfusquer
+- JS
+
+version: '0.1'

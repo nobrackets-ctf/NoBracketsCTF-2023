@@ -1,0 +1,28 @@
+name: Broken Code
+author: Enarior
+category: Programmation
+description: |-
+  Avant de vous donner de vraies tâches, nous allons devoir vous tester.
+  Voilà un bout de code dans lequel nous avons glissé quelques erreurs.
+  Saurez-vous le rendre utilisable ?
+
+  Corrigez les erreurs et récupérez le flag en exécutant le programme.
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{N07_4_8008_4N7M0r3_C0N6r47Z}
+
+files:
+- dist/broken_code.py
+
+tags:
+- Intro
+- Python
+
+version: '0.1'

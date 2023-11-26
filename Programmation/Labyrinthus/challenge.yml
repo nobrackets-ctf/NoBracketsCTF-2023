@@ -1,0 +1,24 @@
+name: Labyrinthus
+author: Endeavxor
+category: Programmation
+description: |-
+  En tant que courageux vaguemestre, vous êtes chargé de livrer des lettres et des messages essentiels entre différentes tranchées alliées. Cependant, les tranchées sont un réseau complexe à traverser mais il est vital que vous trouviez le chemin le plus sûr et le plus rapide pour accomplir votre mission. Votre objectif est, pour chacun des réseau de tranchées que nous vous montrerons, de trouver le bon itinéraire pour acheminer les lettres.
+
+  Auteur: [Endeavxor](https://endeavxor.github.io)
+value: 484
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc labyrinthus.nobrackets.fr 30731
+
+flags:
+- NBCTF{V0S_LeTtres_0NT_81EN_ETe_tr4NsM1SES}
+
+tags:
+- Endeavxor
+- Difficile
+
+version: '0.1'

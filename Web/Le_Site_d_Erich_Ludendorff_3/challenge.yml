@@ -1,0 +1,37 @@
+name: Le site d'Erich Ludendorff 3/3
+author: Drahoxx
+category: Web
+description: |-
+  Bravo ! Vous êtes administrateur ! Il se pourrait qu'Erich Ludendorff utilise son mot de passe un peu partout...
+
+  Exfiltrez le mot de passe d'Erich Ludendorff !
+
+  Pour info, voilà à quoi ressemble la requête SQL à la base de données :
+  `SELECT uid FROM users WHERE username='{rq_username}' and password='{rq_passwd}';`
+
+  *Le lien reste le même que le premier et deuxième challenge.*
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 475
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: http://erich.nobrackets.fr:30744
+
+flags:
+- NBCTF{Ich_m4g_Gr0Sse_PanZer!}
+
+tags:
+- Difficile
+- SQL
+- Blind
+- Drahoxx
+
+hints:
+- https://book.hacktricks.xyz/pentesting-web/sql-injection#exploiting-blind-sqli
+- https://www.sqlitetutorial.net/sqlite-functions/sqlite-substr/
+
+version: '0.1'

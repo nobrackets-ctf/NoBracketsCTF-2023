@@ -1,0 +1,39 @@
+name: RF Surveillance
+author: Endeavxor
+category: Misc
+description: |-
+  Vous êtes chargé d'effectuer des missions de renseignement sur l'ennemi. Alors que vous surveillez une des fréquences connue pour être utilisée proche d'une des bases ennemies, vous constatez du mouvement sur le signal. Il faut absolument réussir à décoder ce message ! Vous avez à votre disposition les graphes GNU Radio de votre équipement de réception ainsi que ceux ayant émis le signal. Bon courage !
+
+  Pour le format du flag, il faut ajouter NBCTF{} autour du message en français *(supprimer les espaces)*.
+
+  Par exemple si vous récupérer un message du style :
+
+  > D I E S   I S T   E I N E   N U T Z L O S E   N A C H R I C H T. G G P O U R  L E D E C O D A G E. B E N D E E T.
+
+  Le flag sera : NBCTF{GGPOURLEDECODAGE}
+
+  Auteur: [Endeavxor](https://endeavxor.github.io)
+value: 480
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+host: null
+
+flags:
+- NBCTF{VOUSAVEZDECODERAVECSUCCESGG}
+
+files:
+- dist/signal_saved
+- dist/RECEPTION_GNU_Radio.png
+- dist/EMISSION_GNU_Radio.png
+
+tags:
+- SDR
+- GNU Radio
+- Endeavxor
+- Difficile
+
+version: '0.1'

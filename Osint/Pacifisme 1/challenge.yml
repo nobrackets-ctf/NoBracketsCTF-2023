@@ -1,0 +1,29 @@
+name: Pacifisme 1
+author: Kawas
+category: Osint
+description: |-
+  1. Un pacifiste essaie d'empêcher l'événement qui nous préoccupe. Il est assassiné juste avant son déclenchement.
+  Quelle est la date du transfert de ses cendres au panthéon ?
+
+  2. Quel parti politique présente le projet de loi décidant de ce transfert ?
+
+
+  Format du flag : `NBCTF{AAAAMMJJ_parti-politique}`
+
+  Auteur: [Kawas](https://ozint.eu/ozinter/4630/)
+value: 356
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{19241123_cartel-des-gauches}
+
+tags:
+- Googleint
+- Moyen
+
+version: '0.1'

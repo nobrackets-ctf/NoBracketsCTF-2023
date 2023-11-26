@@ -1,0 +1,32 @@
+name: Mort pour la France 4
+author: Kawas
+category: Osint
+description: |-
+  On parle toujours du dernier soldat français mort sur le sol français avant l'armistice.
+
+  1. Un jardin de la mémoire portant son nom a été créé. Dans quelle ville est-il situé ?
+  2. Où était auparavant posée la pierre que l'on peut y voir, qui porte l'inscription "A nos morts, INDOCHINE, AFRIQUE DU NORD, OPERATIONS EXTERIEURES" ?
+
+  Format du flag :
+  NBCTF{marseille_chateau-de-la-visite}
+
+  **Attention : Il est formellement interdit de contacter quelconque établissement ou organisme pour demander des informations. On fait de l'OSINT passif, donc toutes les informations sont accessibles en sources ouvertes ! Bon courage :)**
+
+  Auteur: [Kawas](https://ozint.eu/ozinter/4630/)
+value: 444
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+
+flags:
+- NBCTF{compiegne_cloitre-de-la-visitation}
+
+tags:
+- Googleint
+- Geoint
+- Difficile
+
+version: '0.1'

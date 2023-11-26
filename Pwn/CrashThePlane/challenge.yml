@@ -1,0 +1,36 @@
+name: Crash the plane
+author: Drahoxx
+category: Pwn
+description: |-
+  Un avion hongrois rode dans le ciel britannique, les analystes radio ont découvert qu'un service de pilotage à distance était disponible.
+
+
+  C'est avion est un réel danger pour nos alliés, il faut agir vite !
+
+
+
+  Exploitez le service de pilotage de l'avion !
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 260
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 40
+  minimum: 100
+connection_info: nc crashtheplane.nobrackets.fr 30341
+
+flags:
+- NBCTF{M4YD4Y-M4YD4Y--Th3_Pl4n3_1s_Cr4sh1ng!}
+
+files:
+- dist/chall.py
+
+tags:
+- Facile
+- Python
+- Error handling
+- Drahoxx
+
+version: '0.1'
