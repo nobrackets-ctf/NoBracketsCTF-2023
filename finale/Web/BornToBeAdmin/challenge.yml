@@ -1,0 +1,26 @@
+name: Born to be Admin 1/3
+author: Drahoxx
+category: Web
+description: |-
+  Vous aimez les pandas-roux ? Moi je trouve ça trop pipou !
+
+  Votre objectif est de passer administrateur du site.
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 456
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://10.1.X.2:8898/
+
+flags:
+- NBCTF{Y0u're_Th3_TrU3_redpanda-master_You've_Been_B0rn_T0_B3_An_Adm1n}
+
+tags:
+- Facile
+- Drahoxx
+
+version: '0.1'

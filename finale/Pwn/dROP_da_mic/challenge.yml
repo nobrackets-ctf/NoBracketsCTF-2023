@@ -1,0 +1,30 @@
+name: dROP da mic
+author: Drahoxx & Axo
+category: Pwn
+description: |-
+  Time to kick in, bro !
+
+  Auteur: Drahoxx & Axo
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: nc common.nobrackets.lan 9000
+
+flags:
+- NBCTF{I_DON'T_f1nD_VULnERa8il17i35_1_CRe4te_0Pportun1ti3s}
+
+files:
+- dist/dROP_da_mic
+- dist/dROP_da_mic.c
+
+tags:
+- Moyen
+- ROP
+- Drahoxx
+- Axo
+
+version: '0.1'

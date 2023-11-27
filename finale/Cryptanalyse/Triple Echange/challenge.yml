@@ -1,0 +1,45 @@
+# Fichier template à réutiliser pour chaque challenge
+# Contient les informations CTFD
+
+# Champs requis
+name: "Triple Echange"
+author: "TheoR"
+#Cryptanalyse ; Forensic ; Hardware ; Misc ; Osint ; Programmation ; Pwn ; Reseau ; Reverse ; Steganographie ; Systeme ; Web
+category: Cryptanalyse
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4
+    Pour plus de sécurité, Alice et Charlie ont décidé de passer par un intermédiaire (Bob) pour échanger leur clé. 
+    Est-ce vraiment plus sécurisé ?
+
+    Note : La fonction decrypt_flag vous permet de déchiffrer le message une fois la clé privée trouvée.
+    
+    Auteur: TheoR
+
+type: dynamic
+
+# Dont touch that 
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+flags:
+    - NBCTF{CU5t0m_D1ff13_H2llm4n_15_n07_g00D}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+
+tags:
+    - Moyen
+    - Diffie-Hellman
+    - TheoR
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/challenge.py
+    - ressources/output.txt
+
+# Dont touch that (ctfcli related)
+version: "0.1"

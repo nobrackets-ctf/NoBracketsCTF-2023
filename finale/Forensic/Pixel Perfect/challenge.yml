@@ -1,0 +1,33 @@
+name: Pixel Perfect
+author: Shaym
+category: Forensic
+description: |-
+  Monsieur Laboulette a vraiment pris la confiance depuis sa prise de pouvoir à la tête de l'EPUUBS.
+
+  Il se permet même de tracker ses anciens concurrents !
+
+  Retrouver l'url du tracker et la tactique MITRE associé.
+
+  Flag format : NBCTF{T0010:https://google.com}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 400
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{T1430:https://imgur.com/a/qBwfK9k}
+
+files:
+- dist/La_prise_de_l_EPUUBS.msg
+
+tags:
+- Facile
+- Mail
+- Shaym
+
+version: '0.1'

@@ -1,0 +1,27 @@
+name: upXlosive
+author: Axoxo
+category: Reverse
+description: |-
+  Désamorcez la boooooooooooooooooooooooooooooombe !!
+
+  Auteur: Axoxo
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{b4SIc_P@cK1ng_W1TH_upX}
+
+files:
+- dist/upXplosive
+
+tags:
+- Moyen
+- UPX
+- Axoxo
+
+version: '0.1'

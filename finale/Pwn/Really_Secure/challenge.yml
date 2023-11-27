@@ -1,0 +1,30 @@
+name: really secure?
+author: Tek
+category: Pwn
+description: |-
+  String Truncation Really Nasty, Careful Programmer Yikes!
+
+  Auteur: Tek
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: nc common.nobrackets.lan 9007
+
+flags:
+- NBCTF{3v3n_strncpy_15_n07_53cur3_u5e_strlcpy_a9d91ac21170be92}
+
+files:
+- dist/ld-linux-x86-64.so.2
+- dist/chall.c
+- dist/chall
+- dist/libc.so.6
+
+tags:
+- Difficile
+- Tek
+
+version: '0.1'

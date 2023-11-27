@@ -1,0 +1,27 @@
+name: Aventurier
+author: TheoR
+category: Osint
+description: |-
+  Embarque dans l'aventure de ta vie ! Trois mystérieux artefacts cachés t'attendent pour révéler un trésor inestimable.
+
+  Auteur: TheoR
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{Bien_joue_aventurier_voici_le_tresor_tant_convoite}
+
+files:
+- dist/Grande_Quete.png
+
+tags:
+- Facile
+- IRL
+- TheoR
+
+version: '0.1'

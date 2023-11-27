@@ -1,0 +1,25 @@
+name: Cadenas 1/2
+author: ribt
+category: Hardware
+description: |-
+  Allez à la table des admins et demandez à crocheter le cadenas en plastique transparent.
+
+  Si plusieurs personnes veulent faire le challenge, vous avez 2 minutes pour essayer avant de devoir céder votre place. Bonne chance !
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{L0ckp1ck1ng_1s_4n_4rt}
+
+tags:
+- Facile
+- Hardware
+- ribt
+- lockpicking
+
+version: '0.1'

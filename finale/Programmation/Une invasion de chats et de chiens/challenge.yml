@@ -1,0 +1,43 @@
+# Fichier template à réutiliser pour chaque challenge
+# Contient les informations CTFD
+
+# Champs requis
+name: "Une invasion de chats et de chiens"
+author: "TheoR"
+#Cryptanalyse ; Forensic ; Hardware ; Misc ; Osint ; Programmation ; Pwn ; Reseau ; Reverse ; Steganographie ; Systeme ; Web
+category: Programmation
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4
+    J'ai malencontreusement mélangé toutes les photos de mes chats et de mes chiens, pouvez-vous m'aider à les classer ?
+    
+    Auteur: TheoR
+
+type: dynamic
+
+# Dont touch that 
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+connection_info: nc common.nobrackets.lan 9008
+
+flags:
+    - NBCTF{P0w3rful_Mach1n3_L34rN1ng}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+
+tags:
+    - Moyen
+    - Machine Learning
+    - TheoR
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/challenge.py
+
+# Dont touch that (ctfcli related)
+version: "0.1"

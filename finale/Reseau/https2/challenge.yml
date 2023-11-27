@@ -1,0 +1,27 @@
+name: Trafic chiffré 2/2
+author: ribt
+category: Reseau
+description: |-
+  Un de nos salariés est soupçonné de comploter avec la Russie. Nous avons demandé à notre stagiaire de mettre sa machine sur écoute mais ce dernier a mis le filtre "http" dans Wireshark, perdant ainsi une bonne partie du trafic. Notre suspect n'a visité que des sites en HTTPS mais un collègue vous dit que vous pouvez tout de même retrouver les sites qui ont été visités. Retrouvez le site le moins légitime.
+
+  Format du flag : `NBCTF{site.chelou.ru}`
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{pochta.q0.ru}
+
+files:
+- dist/http.pcapng
+
+tags:
+- Difficile
+- Réseau
+- ribt
+
+version: '0.1'

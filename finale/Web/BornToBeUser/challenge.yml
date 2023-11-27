@@ -1,0 +1,30 @@
+name: Born to be User 2/3
+author: Drahoxx
+category: Web
+description: |-
+  Vous êtes devenu admin, il est maintenant temps de devenir user !
+
+  Prenez le contrôle de machine et lisez le contenu du fichier `flag.txt`.
+
+  **Ce challenge est la suite de `Born to be Admin` et se déroule sur même site.**
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://10.1.X.2:8898/
+
+flags:
+- NBCTF{Fr0m_Adm1n_0n_W3bSite_T0_Us3r_0n_S3rver_SSTIs_are_FUN!}
+
+tags:
+- Moyen
+- Drahoxx
+
+requirements:
+- Born to be Admin 1/3
+
+version: '0.1'

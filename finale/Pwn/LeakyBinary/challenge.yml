@@ -1,0 +1,31 @@
+name: LeakyBinary
+author: Tek
+category: Pwn
+description: |-
+  Could you exploit this leaky binary for me please ?
+
+  Auteur: Tek
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: nc common.nobrackets.lan 9003
+
+flags:
+- NBCTF{classic_ret2main_chall_7bb6dc0107dde64d}
+
+files:
+- dist/ld-linux-x86-64.so.2
+- dist/chall.c
+- dist/chall
+- dist/libc.so.6
+
+tags:
+- Moyen
+- ret2libc
+- Tek
+
+version: '0.1'

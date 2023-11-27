@@ -1,0 +1,33 @@
+name: What The Fuck
+author: Shaym
+category: Steganographie
+description: |-
+  Un mathématicien aurait inventé un moyen de mettre un terme à cette foutue guerre.
+
+  Malheureusement les notes qu'il a laissées derrière lui semble sens dessus dessous à s'en casser le cerveau.
+
+  On dirait que tout est à l'envers, à vous de les déchiffrer...
+
+  Format du flag : NBCTF{flag}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 223
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{Fuck_language_1s_s0_w3irD}
+
+files:
+- dist/invention_secrete.txt
+
+tags:
+- Facile
+- Stéganographie
+- Shaym
+
+version: '0.1'

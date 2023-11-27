@@ -1,0 +1,26 @@
+name: Galactic Digger
+author: Daeras
+category: Programmation
+description: |-
+  Votre vaisseau de minage arrive sur une nouvelle planète, mais l'ordinateur de bord semble faire quelques erreurs lorsqu'il vous indique les coordonnées des minerais rares...
+  Peut-être que si vous le corrigez assez de fois, il se rendra compte de son erreur ! Mais faîtes vite, les robots ne sont pas patients...
+
+  Auteur: [Daeras](https://pandhack.fr/author/daeras/)
+value: 400
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: nc common.nobrackets.lan 9001
+
+flags:
+- NBCTF{C0v3r_m3_w17h_d14m0nd5!}
+
+tags:
+- Facile
+- programmation
+- Daeras
+
+version: '0.1'

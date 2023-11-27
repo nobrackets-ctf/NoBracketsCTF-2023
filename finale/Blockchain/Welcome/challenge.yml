@@ -1,0 +1,29 @@
+name: Welcome
+author: K.L.M
+category: Blockchain
+description: |-
+  Bravo pour les qualifs, ça vous tente une nouvelle catégorie ??
+  Bonne découverte ^^
+
+  Auteur: K.L.M
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://common.nobrackets.lan:9090
+
+flags:
+- NBCTF{W3LC0M3_T0_EVM_4ND_5M4RT_C0NTRACT5}
+
+files:
+- dist/Welcome.sol
+
+tags:
+- Intro
+- Web3
+- K.L.M
+
+version: '0.1'

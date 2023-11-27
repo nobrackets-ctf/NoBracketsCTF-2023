@@ -1,0 +1,24 @@
+name: CookieClicker
+author: Drahoxx
+category: Web
+description: |-
+  J'espère que vous avez une bonne souris, car il va falloir cliquer !
+
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 100
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://common.nobrackets.lan:8123/
+
+flags:
+- NBCTF{Tru3_Click3rMaster_OnlY_Uses_C00ki3s}
+
+tags:
+- Facile
+- Drahoxx
+
+version: '0.1'

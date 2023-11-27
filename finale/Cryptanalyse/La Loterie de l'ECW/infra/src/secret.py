@@ -1,0 +1,1 @@
+FLAG = "NBCTF{I_Am_N0w_a_Mi11ion4iR3}"

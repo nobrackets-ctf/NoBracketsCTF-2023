@@ -1,0 +1,38 @@
+name: Can you hear me?
+author: ribt
+category: Hardware
+description: |-
+  Mon récepteur radio (RTL-SDR) capte un étrange signal. J'ai calibré mon récepteur pour que le signal soit le plus clair possible et j'ai utilisé l'outil `rtl_tcp` pour le diffuser sur le réseau. Pouvez-vous m'aider à le décoder ?
+  La fréquence d'échantillonnage est de 2 048 000 Hz.
+
+  L'indice détaille le protocole utilisé, mais vous pouvez le deviner !
+
+  **Attention** : Le flag est en majuscule et au format `NBCTF(...)` (avec des **parenthèses**)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: nc common.nobrackets.lan 9005
+
+flags:
+- NBCTF(SDR_1S_S0000_C00L)
+
+tags:
+- Difficile
+- Hardware
+- ribt
+- radio
+
+hints:
+- content: |-
+    Le texte est encodé en Morse. Voici les spécifications du signal :
+    * envoi d'un `.` : porteuse pure de fréquence 5kHz pendant 1 milliseconde,
+    * envoi d'un `-` : porteuse pure de fréquence 5kHz pendant 5 millisecondes,
+    * espacement entre deux lettres : porteuse pure de fréquence 1kHz pendant 5 millisecondes,
+    * espacement entre deux mots : porteuse pure de fréquence 1kHz pendant 20 millisecondes.
+  cost: 75
+
+version: '0.1'

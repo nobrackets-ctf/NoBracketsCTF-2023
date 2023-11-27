@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CookieClicker</title>
+    <link rel="stylesheet" href="static/css/uikit.min.css" />
+    <script src="static/js/uikit.min.js"></script>
+    <script src="static/js/uikit-icons.min.js"></script>
+</head>
+<body>
+	<!-- Title -->
+	<h1 class="uk-heading-line uk-text-center" style="color: whitesmoke;"><span>Clicker master</span></h1>
+	<!-- Clicks counter and flag placeholder -->
+	<div id="blabla">
+		<p style="color: whitesmoke;" class="uk-text-lead">You clicked : <span id="point">0</span> times</p>
+		<p class="uk-text-meta" id="flag"></p>
+	</div>
+	<!-- Area where you click the button -->
+	<div id="playground">
+		<button id="butter" onclick="add()">Click</button>
+	</div>
+	<!-- Some random CSS to make fancy neons -->
+	<style type="text/css">
+		html{
+			background: url("static/back.gif") no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		#blabla{
+			text-align: center;
+			align-items: center;
+		}
+		#playground{
+			background-color: rgba(68, 75, 110, 0.4);
+			margin: auto;
+			padding: auto;
+			position: static;
+			width: 1400px;
+			height: 500px;
+			border: 0.2rem solid #fff;
+  			border-radius: 2rem;
+    		box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+		}
+		#butter{
+			background-color: black;
+			color: whitesmoke;
+			border: 0.2rem solid #fff;
+  			border-radius: 10px;
+			box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe; 
+			position: relative;
+			width: 100px;
+			height: 50px;
+			top: 100px;
+			left: 400px;
+		}
+		#butter:hover{
+			cursor: pointer;
+		}
+	</style>
+	<!-- Script : You'll have to click a lot of time to get the flag to show up... -->
+	<!-- Note : the flag will pop when your score is greater then 100.000, good luck clicking :D -->
+	<script type="text/javascript">
+		var tot_score = 0;
+		////////////////////////FUNCTION FOR RANDOM////////////////////////
+		function getRandomInt(max) {
+		  return Math.floor(Math.random() * max);
+		}
+
+		// Function to get the value of a cookie by its name
+		function getCookie(cookieName) {
+		  const name = cookieName + "=";
+		  const decodedCookie = decodeURIComponent(document.cookie);
+		  const cookieArray = decodedCookie.split(';');
+
+		  for (let i = 0; i < cookieArray.length; i++) {
+		    let cookie = cookieArray[i].trim();
+		    if (cookie.indexOf(name) === 0) {
+		      return cookie.substring(name.length, cookie.length);
+		    }
+		  }
+		  return null;
+		}
+
+		function display_flag(){
+
+			// Data to be sent in the POST request
+			const data = {
+			  score: tot_score
+			};
+
+			const options = {
+			  method: 'POST',
+			  headers: {
+			    'Content-Type': 'application/json'
+			  },
+			  body: JSON.stringify(data)
+			};
+
+			// Make the fetch request
+			fetch("/flag", options)
+			  .then(response => {
+			    if (!response.ok) {
+			      throw new Error(`HTTP error! Status: ${response.status}`);
+			    }
+			    return response.json();
+			  })
+			  .then(data => {
+			    // Handle the response data
+			    document.getElementById('flag').textContent = data["flag"];
+			  })
+			  .catch(error => {
+			    console.error('Error:', error);
+			  });
+		}
+		function setCookie(cname, cvalue, exdays) {
+		  const d = new Date();
+		  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+		  let expires = "expires="+d.toUTCString();
+		  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+		////////////////////////FUNCTION TRIGGERED ON CLICK////////////////////////
+		function add(){
+			////////////////////////RANDOM LOCATION FOR BUTTON////////////////////////
+			tot_score+=1;
+			setCookie("score",tot_score.toString(),3);
+			var h = getRandomInt(450);
+			var w = getRandomInt(1300);
+			document.getElementById('butter').style.top = h+"px";
+			document.getElementById('butter').style.left = w+"px";
+			////////////////////////INCREMENT POINTS////////////////////////
+			const scoreCookieValue = getCookie('score');
+			// Store the value in the variable named "score"
+			document.getElementById('point').textContent = scoreCookieValue;
+			if(tot_score>=100000){
+				display_flag();
+			}
+			
+		}
+	</script>
+</body>
+</html>

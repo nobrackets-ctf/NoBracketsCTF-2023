@@ -1,0 +1,30 @@
+name: Born to be Root 3/3
+author: Drahoxx
+category: Web
+description: |-
+  Bravo ! Vous avez accès à la machine qui fait tourner le site web, maintenant il est temps de passer administrateur !
+
+  L'objectif de ce challenge est de passer `root` sur la machine et lire le flag dans répertoire /root.
+
+  **Ce challenge est la suite de `Born to be Admin` et `Born to be User` et se déroule sur même site.**
+  Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx)
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://10.1.X.2:8898/
+
+flags:
+- NBCTF{You've_Really_Becomed_Th3_R3d_Panda_And_Red_Team_Master!}
+
+tags:
+- Difficile
+- Drahoxx
+
+requirements:
+- Born to be User 2/3
+
+version: '0.1'

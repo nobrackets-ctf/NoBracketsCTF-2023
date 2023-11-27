@@ -1,0 +1,51 @@
+# Fichier template à réutiliser pour chaque challenge
+# Contient les informations CTFD
+
+# Champs requis
+name: "Téléphone"
+author: "Bapth"
+#Cryptanalyse ; Forensic ; Hardware ; Misc ; Osint ; Programmation ; Pwn ; Reseau ; Reverse ; Steganographie ; Systeme ; Web
+category: Misc
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4
+    Nous avons réussi à intercepter une communication sans être capable de récupérer le numéro de téléphone de l'expéditeur
+    L'objectif de ce challenge est de réussir à le récupérer. Nous avons heuresement, après des analyses extrèmement poussées, réussi à extraires certaines informations.
+    Voici ce que nous avons réussi à extraire : 
+     - Le numéro de téléphone provient de Suisse
+     - La somme des nombres dans le numéro sans compter l'indice (+33 par exemple) est égal à 50  
+     - Il n'y a pas plus de 2 fois le même chiffre dans le numéro sans compte l'indice (2 inclus)
+     - Les 2 premiers chiffres sont : 9 et 8
+     - Le format doit être le suivant: +33.6.56.12.34.12 pour un numéro français ou +32.2.374.22.12 pour un numéro belge
+
+    Auteur: Bapth
+
+type: dynamic
+
+# Dont touch that 
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+connection_info: nc challs.nobrackets.lan 8331
+
+flags:
+    - NBCTF{InPut_3g4L_3vaL}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+
+tags:
+    - Facile
+    - Pyjail
+    - Bapth
+
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/challenge.py
+
+# Dont touch that (ctfcli related)
+version: "0.1"

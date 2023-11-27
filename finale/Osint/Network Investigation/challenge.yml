@@ -1,0 +1,36 @@
+name: Network Investigation
+author: Shaym
+category: Osint
+description: |-
+  Deutsche Gesetzliche Unfallversicherung E.V. (DGUV),
+
+  votre entreprise de fabrication de chaussettes est toujours très préoccupée.
+
+  Elle souhaiterait connaître son exposition sur l'internet mondial.
+
+  Aidez-les à investiguer pour identifier :
+
+  1. Les blocs d'adresse réseaux dont dispose l'entreprise
+
+  2. Le nombre total d'IP présente dans ces deux sous-réseaux
+
+  Format du flag : NBCTF{127.0.0.0/8:192.168.10.0/8:2000}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 489
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{91.224.226.0/23:185.103.232.0/22:1536}
+
+tags:
+- Moyen
+- Osint
+- Shaym
+
+version: '0.1'

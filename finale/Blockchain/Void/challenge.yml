@@ -1,0 +1,29 @@
+name: Void
+author: K.L.M
+category: Blockchain
+description: |-
+  J'espère que l'intro était simple ^^, on corse les choses avec ce challenge.
+  Soyez logiques ^^
+
+  Auteur: K.L.M
+value: 223
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://common.nobrackets.lan:9090
+
+flags:
+- NBCTF{WH4T_1F_I_WAS_NEVER_M0R3_TH4N_1??}
+
+files:
+- dist/Void.sol
+
+tags:
+- Facile
+- Web3
+- K.L.M
+
+version: '0.1'

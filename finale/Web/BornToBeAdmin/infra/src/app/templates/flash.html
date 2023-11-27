@@ -1,0 +1,18 @@
+{% for message in get_flashed_messages() %}
+<div class="notification is-primary">
+  <button class="delete"></button>
+  {{ message }}
+</div>
+{% endfor %}
+<script type="text/javascript">
+	// https://bulma.io/documentation/elements/notification/
+	document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+</script>

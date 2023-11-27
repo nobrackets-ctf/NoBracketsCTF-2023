@@ -1,0 +1,37 @@
+name: Talkie No Walkie
+author: Daeras
+category: Hardware
+description: |-
+  Cet étrange interception radio pourrait bien avoir une importance critique. Tirez-en ce que vous pouvez !
+
+  Sample rate : 176.4kHz
+  Pour le flag, séparez les mots en minuscule avec des _ puis ajoutez les brackets :
+  *Exemple :* Si vous trouvez "i am a flag", validez avec NBCTF{i_am_a_flag}.
+
+  Auteur: [Daeras](https://pandhack.fr/author/daeras/)
+value: 489
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{be_careful_to_who_is_listening}
+
+files:
+- dist/interception.iq
+
+tags:
+- Moyen
+- radio
+- Daeras
+
+hints:
+- content: >-
+    Il y a deux grands types de transmissions radio, l'un commençant par un A, et
+    l'autre utilisé ici.
+  cost: 10
+
+version: '0.1'

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Panda Site</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bulma.min.css') }}">
+</head>
+<body>
+    <section class="hero is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Red Panda Site
+                </h1>
+            </div>
+        </div>
+    </section>
+    {% include 'flash.html' %}
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2">Search</h2>
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="Search for red pandas..." id="search-bar">
+                </div>
+                <div class="control">
+                    <button class="button is-primary" onclick="search()">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="search-results">
+        <div class="container">
+            <!-- Search results will be displayed here -->
+        </div>
+    </section>
+
+    {% if is_admin %}
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2">AdminPanel</h2>
+            <h3 class="title is-3">NBCTF{Y0u're_Th3_TrU3_redpanda-master_You've_Been_B0rn_T0_B3_An_Adm1n}</h3>
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <input class="input" type="text" placeholder="Search for red pandas..." id="admin-bar">
+                </div>
+                <div class="control">
+                    <button class="button is-primary" onclick="admin_search()">Admin search</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section" id="admin-results">
+        <div class="container">
+            <!-- Search results will be displayed here -->
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2">Login</h2>
+            <div class="columns">
+                <div class="column is-one-third">
+                    <form>
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your username" id="username">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control">
+                                <input class="input" type="password" placeholder="Your password" id="password">
+                            </div>
+                        </div>
+
+                        <div class="control">
+                            <button class="button is-primary" type="button" onclick="login()">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-2">Red Panda Gallery</h2>
+            <div class="columns is-multiline">
+                <!-- Replace the image URLs with actual red panda images -->
+                <div class="column is-one-quarter">
+                    <figure class="image">
+                        <img src="{{ url_for('static', filename='bagarre.jpeg') }}" alt="Red Panda 1">
+                    </figure>
+                </div>
+                <div class="column is-one-quarter">
+                    <figure class="image">
+                        <img src="{{ url_for('static', filename='laventure_de_roger.jpg') }}" alt="Red Panda 2">
+                    </figure>
+                </div>
+                <div class="column is-one-quarter">
+                    <figure class="image">
+                        <img src="{{ url_for('static', filename='magic_systeme_les_mains_en_l_air.jpg') }}" alt="Red Panda 3">
+                    </figure>
+                </div>
+                <div class="column is-one-quarter">
+                    <figure class="image">
+                        <img src="{{ url_for('static', filename='trop_pipou_ce_bambou.jpeg') }}" alt="Red Panda 4">
+                    </figure>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        async function search() {
+            const searchTerm = document.getElementById('search-bar').value;
+            const resultsContainer = document.getElementById('search-results');
+
+            // Simulate a POST request (replace with actual fetch or AJAX call)
+            
+            const response = await fetch('/search', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 'search':searchTerm }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`Error: ${response.status} - ${response.statusText}`);
+            }
+
+            const results = await response.json();
+
+            // Display the results
+            resultsContainer.innerHTML = '';
+            results.forEach(result => {
+                const resultBox = document.createElement('div');
+                resultBox.classList.add('box');
+                resultBox.textContent = result;
+
+                resultsContainer.appendChild(resultBox);
+            });
+        }
+
+        async function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 'username':username,'password':password }),
+            });
+            window.location.href = "/";
+        }
+
+        async function admin_search() {
+            const searchTerm = document.getElementById('admin-bar').value;
+            const resultsContainer = document.getElementById('admin-results');
+            
+            const response = await fetch('/admin', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ 'admin_search':searchTerm }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`Error: ${response.status} - ${response.statusText}`);
+            }
+
+            
+            // Display the results
+            resultsContainer.innerHTML = '';
+            const resultBox = document.createElement('div');
+            resultBox.classList.add('box');
+            const span = document.createElement('span');
+            span.style.whiteSpace = "pre-line";
+
+            response.text().then(function (text) {
+                span.textContent = text;
+            });
+            resultBox.appendChild(span);
+            resultsContainer.appendChild(resultBox);
+        }
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+# Fichier template à réutiliser pour chaque challenge
+# Contient les informations CTFD
+
+# Champs requis
+name: "NSHA64"
+author: "Drahoxx & TheoR"
+#Cryptanalyse ; Forensic ; Hardware ; Misc ; Osint ; Programmation ; Pwn ; Reseau ; Reverse ; Steganographie ; Systeme ; Web
+category: Cryptanalyse
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4 
+    Notre agent de terrain Hubert Bonisseur de La Bath a trouvé une puce électronique très secrete !
+    Il s'agirait d'une implémentation physique d'une fonction de hachage ! Cependant elle ne semble pas très sécurisée.
+
+    A vous de réussir à récupérer la clé secrete embarquée dans la puce !
+
+    Note :
+      - Le circuit s'ouvre avec le logiciel Logisim-Evolution
+      - Un service TCP est disponible pour intéragir avec le circuit (il faut récupérer la clé dessus)
+      - La clé à récupérer change à chaque nouvelle connexion TCP
+
+    Auteur: [Drahoxx](https://twitter.com/50mgDrahoxx) & TheoR
+
+connection_info: nc common.nobrackets.lan 9006
+type: dynamic
+
+# Points
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+flags:
+    - NBCTF{Leaky_Leaky_Chip_L3aks_4ll_its_S3cr3ts}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+
+# Tags are used to provide additional public tagging to a challenge
+# You should put at least (And in the same order): 
+#   1) The difficulty : Intro ; Facile ; Moyen ; Dur ; Impossible
+#   2) What the challenge is about (at least one, max 3)
+#        /!\ Don't leak the challenge but inform about global technologies 
+#   3) Your pseudo
+# Accepts strings
+
+tags:
+    - Moyen
+    - Logisim-Evolution
+    - Rev
+    - Crypto
+    - TheoR
+    - Drahoxx
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/NSHA_64.circ
+
+# Dont touch that (ctfcli related)
+version: "0.1"

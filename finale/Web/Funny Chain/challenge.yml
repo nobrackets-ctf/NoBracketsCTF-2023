@@ -1,0 +1,26 @@
+name: Funny Chain
+author: RidzArt
+category: Web
+description: |-
+  Un hacker a trouvé le moyen de lire tous les fichiers présents sur mon serveur... et il y en a beaucoup !
+  Pour la sécurité de mes clients, mon site est en maintenance tant que je n'ai pas trouvé d'où vient le problème.
+  Peut-être pourras-tu m'aider ?
+
+  Auteur: RidzArt
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: http://10.1.1.2:8899/
+
+flags:
+- NBCTF{pHP_p0p_Ch41N_F7W}
+
+tags:
+- Difficile
+- RidzArt
+
+version: '0.1'

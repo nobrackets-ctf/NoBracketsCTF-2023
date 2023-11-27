@@ -1,0 +1,28 @@
+name: Trafic chiffré 1/2
+author: ribt
+category: Reseau
+description: >-
+  Une personnalité importante s'est connectée à son compte RedHat. Nous avons intercepté
+  le trafic réseau. Le site étant en HTTPS, nous vous fournissons également les clés
+  de session TLS. Retrouvez le mot de passe de cette personne.
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{Did_y0u_kn0w_http2?}
+
+files:
+- dist/https.pcapng
+- dist/sslkeylog.txt
+
+tags:
+- Facile
+- Réseau
+- ribt
+
+version: '0.1'

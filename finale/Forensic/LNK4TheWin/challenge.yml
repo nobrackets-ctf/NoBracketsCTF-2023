@@ -1,0 +1,45 @@
+# Fichier template à réutiliser pour chaque challenge
+# Contient les informations CTFD
+
+# Champs requis
+name: "LNK4TheWin"
+author: "Shaym"
+#Cryptanalyse ; Forensic ; Hardware ; Misc ; Osint ; Programmation ; Pwn ; Reseau ; Reverse ; Steganographie ; Systeme ; Web
+category: Forensic
+# "|" pour prendre en compte les newlines "-" pour strip toute les newlines de fin, "4" pour le nombre d'espaces
+description: |-4
+    Monsieur Marteau à enfin lâché le poste de Directeur de L'EPUUBS.
+
+    Mais avant de partir, il a laissé un dernier conseil à son successeur et son comité proche.
+
+    Quel est donc ce dernier conseil ?
+    
+    Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+
+type: dynamic
+
+# Dont touch that 
+value: 500
+extra:
+    initial: 500
+    decay: 6
+    minimum: 100
+
+flags:
+    - NBCTF{F41t3s_c3_qu3_j3_dis_p4s_c3_qu3_j3_f4is...}
+
+# Champs optionnels, peuvent être supprimés si non utilisés
+# Challenges précédents qui doivent être résolus avant de pouvoir accéder à celui-ci
+# Nom des challenges (strings) ou ID des challenges (entiers)
+
+tags:
+    - Moyen
+    - Initial Access
+    - Shaym
+
+# Chemin vers les fichiers donnés pour le challenge
+files:
+    - ressources/echange_de_mail.pst
+
+# Dont touch that (ctfcli related)
+version: "0.1"

@@ -1,0 +1,35 @@
+name: Don't blink your eyes
+author: Daeras
+category: Hardware
+description: |-
+  La carte que vous avez récupérée semble transmettre un message d'une bien étrange manière.
+  En effet, un signal passe sur le pin GPIO numéro 32 mais nous ne savons pas quoi en faire...
+
+  Pour la réalisation de ce challenge, veuillez prendre contact avec un organisateur.
+  Une file d'attente avec des créneaux de 30min est probablement en place, puisque nous n'avons qu'un exemplaire de la carte.
+
+  Le flag que vous trouverez est à entrer sous la forme NBCTF{<flag>}. Exemple : Vous trouvez i_4m_th3_fl4g, entrez NBCTF{i_4m_th3_fl4g} pour valider le challenge !
+
+  Auteur: [Daeras](https://pandhack.fr/author/daeras/)
+value: 456
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{l3d5_4r3_c00l}
+- NBCTF{L3D5_4R3_C00L}
+
+tags:
+- Facile
+- electronique
+- Daeras
+
+hints:
+- content: dih dih dih   dah dah dah   dih dih dih
+  cost: 20
+
+version: '0.1'

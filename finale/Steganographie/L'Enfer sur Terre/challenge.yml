@@ -1,0 +1,35 @@
+name: L'Enfer sur Terre
+author: Shaym
+category: Steganographie
+description: |-
+  Un homme vétu de PRADA vous à fait signé un contrat vous garantissant les droits sur ce magnifiques tableaux.
+
+  Malheureusement depuis rien ne va plus !
+
+  Essayer de déchiffrer ce contrat ésotérique pour comprendre son contenu.
+
+  Format du flag : NBCTF{flag}
+
+  Auteur: [Shaym](https://pandhack.fr/author/shaym/)
+value: 489
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{malbolge_contrax_is_fucking_incomprehensible}
+
+files:
+- dist/tableau.jpg
+- dist/contrat.txt
+
+tags:
+- Facile
+- Stéganographie
+- Langage de programmation
+- Shaym
+
+version: '0.1'

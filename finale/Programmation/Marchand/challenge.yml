@@ -1,0 +1,24 @@
+name: Marchand
+author: Endeavxor
+category: Programmation
+description: |-
+  Bon courage jeune vagabond !
+
+  Auteur: Endeavxor
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+connection_info: nc common.nobrackets.lan 9004
+
+flags:
+- NBCTF{gR4PH_7H30Ry_f0r_7H3_w1n}
+
+tags:
+- Difficile
+- Endeavxor
+
+version: '0.1'

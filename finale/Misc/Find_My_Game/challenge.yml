@@ -1,0 +1,35 @@
+name: Find my game
+author: Daeras
+category: Misc
+description: |-
+  Je me souviens avoir joué à un jeu bizarre en 2012... Je l'avais trouvé sur un forum pas très recommendable, mais j'ai appris qu'il contenait peut-être un trojan, alors je l'ai supprimé.
+  J'aimerais bien le retrouver, vous pouvez faire ça pour moi ?  Je crois que des gens ont avancé les recherches tout récemment.
+  Pour me prouver que c'est le bon, trouvez l'exécutable, et réalisez un hash 256 du fichier, ce sera votre flag.
+  N'oubliez pas, NE L'EXECUTEZ PAS, je ne serais pas responsable d'éventuels dégâts dans le cas contraire...
+
+  Le flag que vous trouverez est à entrer sous la forme NBCTF{SHA256_du_fichier}.
+
+  Auteur: [Daeras](https://pandhack.fr/author/daeras/)
+value: 400
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+
+flags:
+- NBCTF{2639a5c730dc851207451ade1bc65c7b5f1e79151c17320e6825b77b585bcad8}
+
+tags:
+- Facile
+- lostmedia
+- misc
+- osint
+- Daeras
+
+hints:
+- content: Il me semble qu'un youtuber français l'a récemment retrouvé
+  cost: 20
+
+version: '0.1'

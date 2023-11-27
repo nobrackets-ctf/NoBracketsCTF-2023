@@ -1,0 +1,32 @@
+name: Zubaltron Cosmique
+author: Enarior
+category: Programmation
+description: |-
+  Le Zubaltron Cosmique est un jeu de plateau très populaire en Zubaltronie.
+  C'est même le jeu préféré des zubaltrons (quand il ne sont pas occupés à surfer sur le soleil, bien entendu).
+
+  Gagnez cette partie de Zubaltron cosmique.
+
+  Auteur : Enarior
+value: 500
+type: dynamic
+
+extra:
+  initial: 500
+  decay: 6
+  minimum: 100
+host: nc common.nobrackets.lan 9009
+connection_info: nc common.nobrackets.lan 9009
+
+flags:
+- >-
+  NBCTF{1N_7H3_8361NN1N6_7H3_UN1V3r53_W45_Cr3473D_TH1S_H45_M4D3_4_l07_0F_P30P13_V3rY_4N6rY_4ND_833N_W1D31Y_r364rD3D_45_4_84D_M0V3}
+
+files:
+- dist/zubaltron_cosmique_regles.md
+
+tags:
+- Difficile
+- Enarior
+
+version: '0.1'
