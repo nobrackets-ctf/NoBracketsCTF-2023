@@ -1,6 +1,7 @@
 # NoBrackets-CTF-2023
-[<img src="images/nobrackets.svg" width="300">](https://nobrackets.fr/)
-
+<p align="center">
+	[<img src="images/nobrackets.svg" width="350">](https://nobrackets.fr/)
+</p>
 
 Un CTF, abréviation de "Capture The Flag", est un concours qui met à l'épreuve vos compétences en informatique / cybersécurité par équipe.
 
@@ -20,9 +21,9 @@ Le NoBracketsCTF est né de deux constats :
 ## Qualifications
 | Nom                             | Catégorie      | Difficulté | Auteur     | Infra |
 |---------------------------------|----------------|------------|------------|-------|
-| [Prise d'informations 1/3](qualifications/Reverse/Prise%5C%20d%5C'informations%5C%201/)        | Reverse        | Intro      | Endeavxor  |       | 
-| [Prise d'informations 2/3](qualifications/Reverse/Prise%5C%20d%5C'informations%5C%202)        | Reverse        | Intro      | Endeavxor  |       | 
-| [Prise d'informations 3/3](qualifications/Reverse/Prise%5C%20d%5C'informations%5C%203)        | Reverse        | Facile     | Endeavxor  |       | 
+| [Prise d'informations 1/3](qualifications/Reverse/Prise%20d'informations%%201/)        | Reverse        | Intro      | Endeavxor  |       | 
+| [Prise d'informations 2/3](qualifications/Reverse/Prise%20d'informations%202)        | Reverse        | Intro      | Endeavxor  |       | 
+| [Prise d'informations 3/3](qualifications/Reverse/Prise%20d'informations%203)        | Reverse        | Facile     | Endeavxor  |       | 
 | [Secret Circuit](qualifications/Reverse/Secret_Circuit)                  | Reverse        | Facile     | Drahoxx    |       | 
 | [Le C c'est le S](qualifications/Reverse/Le_C_c_est_le_S)                 | Reverse        | Facile     | Drahoxx    |       | 
 | [Introduction à la lecture](qualifications/Reverse/Introduction_A_la_lecture)       | Reverse        | Moyen      | Axonarage  |       | 
