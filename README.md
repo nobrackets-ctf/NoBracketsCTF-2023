@@ -1,5 +1,5 @@
 # NoBrackets-CTF-2023
-[<img src="images/nobrackets.svg" width="500">](https://nobrackets.fr/)
+[<img src="images/nobrackets.svg" width="300">](https://nobrackets.fr/)
 
 
 Un CTF, abréviation de "Capture The Flag", est un concours qui met à l'épreuve vos compétences en informatique / cybersécurité par équipe.
