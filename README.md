@@ -5,10 +5,10 @@
 Un CTF, abréviation de "Capture The Flag", est un concours qui met à l'épreuve vos compétences en informatique / cybersécurité par équipe.
 
 Le NoBracketsCTF est organisé par le club étudiant Galette Cidre CTF (GCC), par des étudiants des spécialités Cyberdéfense, Cybersécurité du Logiciel et Cybersécurité et Sciences des Données de l'Ecole Nationale Supérieure d'Ingénieur de Bretagne Sud (ENSIBS).
-
-[<img src="images/logo-gcc.png" width="100">](https://gcc-ensibs.fr/)
-[<img src="images/ensibs.png" width="200">](https://www-ensibs.univ-ubs.fr/fr/index.html)
-
+<p align="center">
+	<a href="https://gcc-ensibs.fr/"><img src="images/logo-gcc.png" width="100"></a>
+	<a href="https://www-ensibs.univ-ubs.fr/fr/index.html"><img src="images/ensibs.png" width="200"></a>
+</p>
 Cet événement est accessible à **tous**, que vous soyez **débutants** ou à l'aise avec l'informatique.
 
 Le NoBracketsCTF est né de deux constats :
@@ -16,6 +16,8 @@ Le NoBracketsCTF est né de deux constats :
 - le milieu de la cybersécurité / cyberdéfense est plutôt méconnu des jeunes lorsqu’ils doivent s’orienter vers des études supérieures ;
 - malgré des campagnes de divers organismes (privés et publics), en 2021 les femmes ne représentaient encore que 11% des employés de la cybersécurité.
 
+
+Ci-dessous se trouvent les challenges pour la phase de qualification et la finale du NoBracketsCTF 2023.
 
 ## Qualifications
 | Nom                             | Catégorie      | Difficulté | Auteur     | Infra |
