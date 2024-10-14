@@ -1,1 +1,1 @@
-# [Sniffer Loader](https://pandhack.fr/forensic/)
+# [Sniffer Loader](https://shaym.xyz/forensic/)
