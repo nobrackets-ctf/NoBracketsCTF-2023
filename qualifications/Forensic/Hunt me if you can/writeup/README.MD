@@ -1,1 +1,1 @@
-# [Hunt me if you can](https://pandhack.fr/forensic-2/)
+# [Hunt me if you can](https://shaym.xyz/forensic-2/)
